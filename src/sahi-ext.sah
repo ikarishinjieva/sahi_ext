@@ -1,0 +1,19 @@
+<browser>
+//imported from sahi-wait.js
+</browser>
+
+function __set_grid_value($locator, $rowIndex, $colHeader, $value) {
+	_call(__sahi_ext.__set_grid_value($locator, $rowIndex, $colHeader, $value));
+}
+
+function __get_grid_value($locator, $rowIndex, $colHeader) {
+	var $ret;
+	_set($ret, __sahi_ext.__get_grid_value($locator, $rowIndex, $colHeader));
+	return $ret;
+}
+
+function __get_grid_row_size($locator) {
+	var $ret;
+	_set($ret, __sahi_ext.__get_grid_row_size($locator));
+	return $ret;
+}
